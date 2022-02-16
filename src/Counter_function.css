@@ -1,0 +1,66 @@
+body{
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    background-color: rgb(182, 182, 182);
+    padding: 0;
+    margin: 0;
+  }
+  
+  .container{
+    height: 400px;
+    width: 400px;
+    background: #fff;
+    position: relative;
+  }
+  
+  .container h1 {
+    width: 123px;
+    height: 127px;
+    text-align: center;
+    font-size: 110px;
+    position: absolute;
+    left: 35%;
+  }
+  
+  .container h2{
+    font-size: 20px;
+    position: absolute;
+    top: 8%;
+    left: 35%;
+  }
+
+  .container .func{
+    font-size: 15px;
+    position: absolute;
+    top: 15%;
+    left: 41%;
+  }
+  
+  .buttons {
+    height: 50px;
+    width: 260px;
+    position: absolute;
+    bottom: 25%;
+    left: 70px;
+  }
+  
+  .buttons button {
+    color: white;
+    height: 30px;
+    width: 120px;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+    position: absolute;
+  }
+  
+  .increment {
+    background-color: #066403;
+    right: 1;
+  }
+  
+  .decrement {
+    background-color: #f70b0b;
+    right: 0; 
+  }

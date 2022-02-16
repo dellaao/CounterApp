@@ -1,26 +1,23 @@
-import React from 'react';
+import React, {useState} from 'react';
 import logo from './logo.svg';
 import './App.css';
+import {Counter_function} from './Counter_function';
+import { Counter_class } from './Counter_class';
 
 function App() {
+
+  let [isToggleOn, setState] = useState(true);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="buttontoggle">
+      <button className="toggle" onClick={() => setState(!isToggleOn)}>
+        {isToggleOn ? 'Counter (Function) ' : ' Counter (Class) '}
+      </button>
+      <div>
+        {isToggleOn ? <Counter_function /> : <Counter_class />}
+      </div>
     </div>
   );
-}
+} 
 
 export default App;
